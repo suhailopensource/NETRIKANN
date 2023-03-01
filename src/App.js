@@ -1,8 +1,12 @@
 import TheosAPI from "./components/TheosAPI";
+import Nav from "../src/components/Nav"
 
 function App() {
-  return (
-<TheosAPI></TheosAPI>
+  return (<>
+    <Nav></Nav>
+<TheosAPI ></TheosAPI>
+  </>
+
   );
 }
 

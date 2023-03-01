@@ -64,9 +64,9 @@ function TheosAPI() {
   }
 
   return (
-    <div style={{ padding: '20px' }}>
-      <h1>Netrikann</h1>
-      {detecting ? <h3>Detecting...</h3> : <div><label htmlFor='file-upload' style={{cursor:'pointer', display:'inline-block', padding:'8px 12px', borderRadius: '5px', border:'1px solid #ccc'}}>Click to select an image</label><input id='file-upload' type='file' accept='image/*' onChange={onFileSelected} style={{display:'none'}}/></div>}
+    <div  class="position-absolute top-50 start-50 translate-middle" style={{ padding: '20px' }}>
+  
+      {detecting ? <h3>Detecting...</h3> : <div><label class="bg-primary text-white" htmlFor='file-upload' style={{cursor:'pointer', display:'inline-block', padding:'8px 12px', borderRadius: '5px', border:'1px solid #ccc'}}>Click to select an image</label><input id='file-upload' type='file' accept='image/*' onChange={onFileSelected} style={{display:'none'}}/></div>}
       {detected && <h3><pre>{detections}</pre></h3>}
       {error && <h3 style={{color:'red'}}>{error}</h3>}
     </div>
